@@ -1,64 +1,3 @@
-# @hoc-element/affix
-
-![npm](https://img.shields.io/npm/v/@hoc-element/affix)  ![NPM](https://img.shields.io/npm/l/@hoc-element/affix)
-
-📌 将页面元素固定在可视范围内。
-
-**Live demo:** https://pdsuwwz.github.io/hoc-element-affix
-
-## Environment Support
-
-* Vue 2.6.0+
-
-## Install
-
-```shell
-npm install @hoc-element/affix
-```
-
-## Quick Start
-
-```js
-import Vue from 'vue'
-import HocElementAffix from '@hoc-element/affix'
-
-Vue.use(HocElementAffix)
-```
-
-## Feature
-
-- [x] 自定义顶部偏移量
-- [x] 固定状态改变时触发的回调
-- [x] 插槽式的固定状态反馈
-
-## Using
-
-### 绑定参数 Attributes
-
-| 字段 | 说明 | 类型 | 默认值 |
-| -------- | -------- | -------- | -------- |
-| offsetTop | （可选）距离窗口顶部多少时开始固定 | Number | 0 |
-
-### 事件 Events
-
-| 字段 | 说明 | 类型 |
-| -------- | -------- | -------- |
-| change | （可选）固定状态发生改变时的回调函数 | Function |
-
-### 插槽数据 Slot
-
-绑定的数据默认在一个对象里，如需要可直接解构再使用
-
-| 字段 | 说明 | 类型 | 默认值 |
-| -------- | -------- | -------- | -------- |
-| affixed | （可选）实时的固定状态 | Boolean | false |
-
-
-## Demo
-
-下面是比较全的例子，几乎囊括了 API 的所有用法，源码戳这： [Code](https://github.com/pdsuwwz/hoc-element-affix/tree/master/example/src/views/ExampleAffix.vue )
-
-```html
 <template>
   <div class="box-container">
     <div class="content">
@@ -143,5 +82,3 @@ export default {
   }
 }
 </style>
-```
-
